@@ -20,7 +20,7 @@ export default {
     <nav class="p-5 space-x-5 flex flex-row">
       <router-link class="  text-2xl" to="/">Home</router-link> |
       <router-link class="  text-2xl" to="/about">About</router-link>
-
+      <router-link v-if="!token" class="text-2xl" to="/register">Sing Up</router-link>
       <button v-if="token" class=" bg-green-500 hover:bg-green-700 h-8 w-32  rounded-sm text-xl " @click="cerrarSesion">Cerrar Sesión</button>
     
     </nav>
